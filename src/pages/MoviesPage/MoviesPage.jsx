@@ -33,7 +33,7 @@ export default function MoviesPage() {
         if (results.length === 0) {
           setError("There are no movies matching your query");
         }
-        setMovies((prevMovies) => [...prevMovies, ...results]);
+        setMovies(results);
 
         setShowPrevNext(totalPages > 1);
         setDisablePrev(page === 1);
