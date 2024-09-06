@@ -84,7 +84,9 @@ export default function MoviesPage() {
           </button>
         </div>
       )}
-      {movies.length > 0 && <MovieList movies={movies}></MovieList>}
+      {movies.length > 0 && !isLoading && (
+        <MovieList movies={movies}></MovieList>
+      )}
       {isLoading && <Loader />}
     </div>
   );
