@@ -10,7 +10,7 @@
 /* 2 on screen */
 @media only screen and (min-width: 608px) {
   .list {
-    width: 650px;
+    width: 608px;
   }
 }
 
@@ -25,6 +25,13 @@
 @media only screen and (min-width: 1532px) {
   .list {
     width: 1532px;
+  }
+}
+
+/* 10 on screen (4K) */
+@media only screen and (min-width: 3072px) {
+  .list {
+    width: 3072px;
   }
 }
 
